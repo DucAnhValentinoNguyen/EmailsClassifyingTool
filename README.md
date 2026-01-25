@@ -25,11 +25,11 @@ The model is trained and validated using `email_categories_data.csv`. The datase
 ### 1. Data Preprocessing
 Given the structure of the `email_content`, the pipeline includes a custom parsing step to differentiate between the Subject line and the Body. In NLP, the Subject often contains the highest "information gain," and is treated as a priority feature.
 
-[Image of a typical text classification pipeline including tokenization, vectorization, and model training]
-
 ### 2. Proposed Methodology
 * **Baseline:** N-gram TF-IDF vectorization with a Multinomial Naive Bayes classifier.
 * **Deep Learning:** Fine-tuning a `distilbert-base-uncased` transformer model to capture the semantic context between the subject and the body.
 
 ### 3. Evaluation Metrics
-To ensure a robust PhD-level analysis, the model is evaluated using
+The model is evaluated using:
+* **F1-Score:** To account for potential class imbalances between 'Priority' and 'Promotions'.
+* **Confusion Matrix:** To identify linguistic overlaps between categories.
