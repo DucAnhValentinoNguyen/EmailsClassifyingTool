@@ -1,8 +1,7 @@
 # EmailsClassifyingTool
 An intelligent email assistant using Llama helping users automatically classify their incoming emails: The system will identify which emails need immediate attention, which are regular updates, and which are promotions that can wait or be archived.
 
-The Data
-You'll work with a dataset of various email examples, ranging from urgent business communications to promotional offers. Here's a peek at what you'll be working with:
+The Data: a dataset of various email examples, ranging from urgent business communications to promotional offers. Here's a peek at what you'll be working with:
 
 # Email Classification for NLP Task Prioritization
 
